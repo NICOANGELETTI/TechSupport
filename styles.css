@@ -1,0 +1,558 @@
+/* Estilos globales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: #fff;
+}
+
+.imagenUno {
+    width: 600px;
+    height: 300px;
+    border-radius: 0.5rem;
+}
+
+/* Estilos para la barra de navegación */
+.navbar {
+   
+    display: flex;
+    justify-content: center;
+    background-color: #cf4545;
+    color: #000000;
+    padding: 50px 20px;
+ 
+  
+  
+}
+/* Estilos para el título animado */
+.animated-title {
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Arial', sans-serif; /* Cambia la tipografía según tus preferencias */
+    color: #ffffff; /* Cambia el color del texto */
+    padding: 20px; /* Añade relleno alrededor del texto */
+   
+    opacity: 0;
+    animation: fadeIn 5s ease-out forwards;
+}
+
+/* Definición de la animación */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 2;
+    }
+}
+
+/* Agrega estos estilos al final de tu archivo CSS */
+
+.navbar-links {
+   
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar-links li {
+    margin: 0 20px; /* Espacio entre elementos de la lista */
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-links a:hover {
+    color: #cf4545;
+}
+
+/* Estilos para el submenú */
+/* Estilos para el navbar y los enlaces */
+.navbar-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  
+    padding: 10px;
+  }
+  
+  .navbar-links li {
+    position: relative;
+    margin-right: 20px;
+  }
+  
+  .navbar-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.5s ease-in-out;
+  }
+  
+  /* Estilos para el submenú */
+  .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+  
+    list-style: none;
+    padding: 10px;
+  }
+  
+  .has-submenu:hover .submenu {
+    display: block;
+  }
+  
+  .submenu li {
+    margin-top: 10px;
+  }
+  
+  .submenu a {
+    color: #fff;
+  }
+  
+  /* Efecto de hover para los enlaces */
+  .navbar-links a:hover {
+    color: #ff0000;
+  }
+
+
+
+  
+.imagenDescanso{
+    width: 200px;
+    height:400px;
+    margin-left: 40rem ;
+    
+}
+
+
+.image-contenedor {
+    max-width: 600px;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.image-itemAnimado {
+    position: relative;
+}
+
+.animated-image {
+    max-width: 100%; /* Ajusta el tamaño máximo de la imagen al contenedor */
+    height: auto; /* La altura se ajusta automáticamente para mantener la proporción original */
+    border-radius: 8px;
+    animation: pulse 1.5s infinite;
+}
+
+
+.imagen{
+    width: 300px;
+    height: 300px;
+}
+@keyframes pulse  {
+    0% {
+        transform: scale(1.0);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px; /* Espacio entre las imágenes */
+ 
+}
+
+.image-item {
+    text-align: center;
+    max-width: 300px; /* Ajusta según tu preferencia */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.imagen {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos adicionales para el contenedor y la animación de hover */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .image-item {
+    position: relative;
+    overflow: hidden;
+    border: 2px solid #3498db; /* Cambia el color del borde según tus preferencias */
+    border-radius: 10px;
+    margin: 10px;
+    transition: transform 0.3s ease-in-out; /* Agrega una transición suave al hacer hover */
+  }
+  
+  .image-item:hover {
+    transform: scale(1.05); /* Hace que el contenedor se agrande un poco al hacer hover */
+  }
+  
+  .image-title {
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff; /* Cambia el color del texto según tus preferencias */
+    margin-bottom: 20px;
+  }
+
+/* Estilos para la sección de inicio */
+.hero {
+    background-image: url("hero-background.jpg");
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+.hero p {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.services {
+    text-align: center;
+    padding: 50px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.service-card {
+    flex: 0 0 calc(30% - 20px); /* 30% de ancho para cada tarjeta, con espacio entre ellas */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.service-card:hover {
+    transform: scale(1.05);
+}
+
+.tituloServicios{
+    display: flex;
+    justify-content: center;
+    margin-top: 25rem;
+}
+
+/* Puedes ajustar el ancho y los márgenes según tus preferencias */
+/* Estilos para la sección de contacto */
+.contact {
+    background-color: #eee;
+    text-align: center;
+    padding: 50px 0;
+}
+
+/* Nuevos estilos para el carrusel en el encabezado */
+.header-carousel {
+    position: relative;
+    overflow: hidden;
+    max-height: 400px;
+}
+
+.header-carousel img {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+.header-carousel img.active {
+    display: block;
+}
+
+/* Nuevos estilos para los controles del carrusel */
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.prev-btn,
+.next-btn {
+    font-size: 24px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+/* Estilos actualizados para el menú desplegable */
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    background-color: #333;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+
+.nav-links.show {
+    display: flex;
+}
+
+.formContact {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin: 10px 0;
+    color: #fff;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+
+
+  
+  .content {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+      transform: translate(-50%, -50%);
+    margin-top: 20rem;
+
+    p {
+      margin: 0 0 20px;
+    }
+    
+  }
+  
+  /* Arrow & Hover Animation */
+  #more-arrows {
+      width: 75px;
+    height: 65px;
+    
+    &:hover {
+      
+      polygon {
+        fill: #FFF;
+        transition: all .2s ease-out;
+  
+        &.arrow-bottom {
+          transform: translateY(-18px);
+        }
+  
+        &.arrow-top {
+          transform: translateY(18px);
+        }
+        
+      }
+    
+    }
+    
+  }
+
+  .tituloFlecha{
+    display: flex; 
+    justify-content: center;
+
+  }
+  
+  polygon {
+    fill: #FFF;
+    transition: all .2s ease-out;
+      
+    &.arrow-middle {
+        opacity: 0.75;
+      }
+  
+      &.arrow-top {
+        opacity: 0.5
+      }
+       
+  }
+/* Estilos para el botón de WhatsApp */
+.whatsapp-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ffffff; /* Color verde característico de WhatsApp */
+    padding: 10px;
+    border-radius: 100%;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Asegura que esté por encima del contenido */
+}
+
+.whatsapp-btn img {
+    width: 30px; /* Ajusta el tamaño del ícono según tus preferencias */
+}
+.tooltip-text {
+    visibility: hidden;
+    width: 120px;
+    background-color: #25d366;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -100px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.whatsapp-btn:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Estilos para el título */
+.image-title {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 20px;
+}
+
+.Compromisos{
+    margin-top: 12rem;
+}
+footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+ 
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footer-logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer-column {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.footer-column h4 {
+    color: #fff;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column ul li {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-bottom p {
+    margin: 0;
+}
+
+.ubicacion{
+   
+    width: 1200px ;
+    border-radius: 1rem;
+}
+.ubicacionContenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.tituloUbicacionContenedor{
+    display: flex;
+    justify-content: center;
+}
+
+.tituloUbicacion{
+    font-size: 2rem;
+}
+
+.ubicacionContenedor {
+    overflow: hidden; /* Oculta el contenido que excede el contenedor */
+    position: relative;
+   
+  }
+  
+  .ubicacionContenedor img {
+    
+    transition: transform 0.3s ease-in-out; /* Añade una transición suave al efecto de zoom */
+  }
+  
+  .ubicacionContenedor:hover img {
+    transform: scale(1.5); /* Aplica un zoom del 20% al hacer hover */
+  }
